@@ -1,0 +1,10 @@
+@use "../utilities/variables" as var;
+
+.homePageContainer {
+  @include var.basic-flex-row;
+
+  .cryptoCardContainer {
+    width: 50%;
+    @include var.basic-flex-column;
+  }
+}
