@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./app.scss";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/shared/Navbar";
 
@@ -8,8 +8,8 @@ import HomePage from "./components/HomePage";
 import NewsPage from "./components/NewsPage";
 import { MarketList } from "./apis/MarketList";
 import { NewsList } from "./apis/NewsList";
-import { RootState } from "./redux/store";
-import { useSelector, useDispatch } from "react-redux";
+// import { RootState } from "./redux/store";
+// import { useSelector, useDispatch } from "react-redux";
 
 function App() {
   const [marketList, setMarketList] = useState([]);
